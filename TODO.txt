@@ -1,0 +1,17 @@
+? make PC a special register in the register file
+
+? bitwise logical statements for control unit port assignments (like in sparc_ifu_dec.v)
+  > more in line with actual hardware design
+  > less code duplication
+  > harder to read/debug
+  
+> separate memory and control unit from datapath
+
+> implement instructions
+  > BLTZ, BGEZ, BLTZAL, BGEZAL
+
+> multiplication/division instructions (and HI/LO registers)
+
+> exception when pc_next is not word aligned
+
+> interfaces?
