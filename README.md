@@ -1,5 +1,5 @@
 # svMIPS
-A single-cycle MIPS process designed in SystemVerilog
+A single-cycle MIPS processor designed in SystemVerilog
 
 
 ## Usage
