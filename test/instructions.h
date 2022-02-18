@@ -189,7 +189,7 @@ public:
 
 	constexpr explicit operator uint32_t() const noexcept override {
 		uint32_t out = 0;
-		out |= static_cast<uint32_t>(op) << 26;
+		out |= static_cast<uint32_t>(Opcode::TYPE_R) << 26;
 		out |= static_cast<uint32_t>(rs) << 21;
 		out |= static_cast<uint32_t>(rt) << 16;
 		out |= static_cast<uint32_t>(rd) << 11;
@@ -202,7 +202,6 @@ public:
 	//------------------------------------------------------------
 	// Member Variables
 	//------------------------------------------------------------
-	const   uint8_t op : 6 = Opcode::TYPE_R;
 	uint8_t rs         : 5 = 0;
 	uint8_t rt         : 5 = 0;
 	uint8_t rd         : 5 = 0;

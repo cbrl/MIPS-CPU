@@ -1,4 +1,4 @@
-verilator -Isrc/ -Wall -Wno-fatal --trace-fst --trace-structs --trace-max-array 512  src/cpu.sv --exe --cc -CFLAGS "-std=c++2a" testbench.cpp
+verilator -Isrc/ -Wall -Wno-fatal --trace-fst --trace-structs --trace-max-array 512  src/cpu.sv --exe --cc -CFLAGS "-std=c++2a" test/testbench.cpp
 make -j -C obj_dir -f Vcpu.mk
 ./obj_dir/Vcpu &
 Vcpu_PID=$!
